@@ -1,0 +1,209 @@
+/*Fontes usadas*/
+@font-face {
+    font-family: BebasNeue;
+    src: url(../site/Fontes/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: RobotoMono;
+    src: url(../site/Fontes/RobotoMono-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: RobotoMonoSemiBoldItalic;
+    src: url(../site/Fontes/RobotoMono-SemiBoldItalic.ttf);
+}
+
+@media(min-width: 481px) and (max-width:768px){
+    header{
+        margin-bottom: 10%;
+    }
+}
+
+
+/*Fundo*/
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+
+/*Barra de navegação*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex; 
+    align-items: center; 
+    cursor:auto
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    margin-right: 10px; 
+}
+
+.logo h1 {
+    margin: 0; 
+    font-family: RobotoMono;
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a {
+    color: rgb(179, 176, 176);
+    text-decoration: none;
+    font-family: BebasNeue;
+    padding-right: 10px;
+    font-size: 35px;
+}
+
+li:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+nav ul li a:hover {
+    transition: all 0.3s ease;
+    color: rgb(0, 0, 0);
+}
+
+#inicio{
+    color: black;
+}
+
+
+/*Quebras de linha*/
+hr{
+    border: none;
+    height: 3px;
+    background: rgb(110, 110, 110);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+/*Capas de álbum*/
+
+.albuns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.meaningless{
+    width: 30%;
+    height: auto;
+}
+
+.meaningless img{
+    width: 100%;
+    height: auto;
+}
+
+.meaningless h1{
+    text-align: center;
+    font-family: RobotoMono;
+    color: rgb(0, 0, 0);
+}
+
+.dissymetry{
+    width: 30%;
+    height: auto;
+}
+
+.dissymetry img{
+    width: 100%;
+    height: auto;
+}
+
+.dissymetry h1{
+    text-align: center;
+    font-family: RobotoMono;
+    color: rgb(0, 0, 0);
+}
+
+
+@media (min-width: 480px) and (max-width: 768px){
+    .dissymetry h1{
+        font-size: 25px;
+    }
+    .meaningless h1{
+        font-size: 25px;
+    }
+}
+
+
+/*Menu Burger*/
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
+
+
+/* Menu Responsivo */
+@media (max-width: 900px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: flex;
+        justify-content: center;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 10px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links li a {
+        font-size: 20px;
+    }
+}
+
+
+/*COPYRIGHT*/
+.copyright{
+    margin-top: 5%;
+    text-align: center;
+    font-family: RobotoMonoSemiBoldItalic;
+    color: black;
+}
+

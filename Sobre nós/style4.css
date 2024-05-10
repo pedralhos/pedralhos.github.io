@@ -1,0 +1,217 @@
+/*Fontes usadas*/
+@font-face {
+    font-family: BebasNeue;
+    src: url(../Fontes/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: RobotoMono;
+    src: url(../Fontes/RobotoMono-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: RobotoMonoSemiBoldItalic;
+    src: url(../Fontes/RobotoMono-SemiBoldItalic.ttf);
+}
+
+
+/*Fundo*/
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+
+/*Barra de navegação*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex; 
+    align-items: center; 
+    cursor:auto
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    margin-right: 10px; 
+}
+
+.logo h1 {
+    margin: 0; 
+    font-family: RobotoMono;
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a {
+    color: rgb(179, 176, 176);
+    text-decoration: none;
+    font-family: BebasNeue;
+    padding-right: 10px;
+    font-size: 35px;
+}
+
+li:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+nav ul li a:hover {
+    transition: all 0.3s ease;
+    color: rgb(0, 0, 0);
+}
+
+#sobre_nos{
+    color: black;
+}
+
+
+/*Titulo da Página */
+.titulo{
+    text-align: center;
+    font-family: RobotoMono;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+
+/*Informações - Sobre nós*/
+.logo1{
+    padding-top: 20px;
+    padding-left: 36%;
+    padding-bottom: 20px;
+    width: 30%;
+    height: auto;
+}
+
+.logo1 img{
+    width: 100%;
+    height: auto;
+}
+
+.logo1 p{
+    font-family: RobotoMono;
+}
+
+.link1{
+    color: black;
+}
+
+.link2{
+    color: black;
+}
+
+
+/*Redes Sociais*/
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    margin-right: 5%;
+}
+
+.logo-container img {
+    width: 50px; 
+    height: auto;
+    cursor: pointer; 
+}
+
+.logo-container .email{
+    width: 38px;
+    height: auto;
+}
+
+.logo-container .email:hover{
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+.logo-container .instagram{
+    width: 73px;
+    height: auto;
+}
+
+.logo-container .instagram:hover{
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+.logo-container .spotify:hover{
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+
+/* Menu Burger */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+}
+
+
+/* Menu Responsivo */
+@media (max-width: 900px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: flex;
+        justify-content: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 10px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+}
+
+
+/*COPYRIGHT*/
+.copyright{
+    text-align: center;
+    font-family: RobotoMonoSemiBoldItalic;
+    color: black;
+}
+
+

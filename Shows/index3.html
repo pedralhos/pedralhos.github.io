@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shows</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="../Imagens/images.jpeg" alt="logo">
+            <h1>creeg</h1>
+        </div>
+        <nav>
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../Músicas/index2.html">Músicas</a></li>
+            <li><a id="shows" href="../Shows/index3.html">Shows</a></li>
+            <li><a href="../Produtos/index5.html">Produtos</a></li>
+            <li><a href="../Sobre nós/index4.html">Sobre nós</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        </nav>
+    </header>
+        <h1 class="titulo">SHOWS</h1>
+        <div class="container">
+            <h1>Agenda - 2024</h1>
+            <div class="show">
+                <h3>11/05/2024 - São Paulo - SP - 15:00</h3>
+                <p>Festival Somos Rock 2024 - Santana</p>
+            </div>
+            <div class="show">
+                <h3>15/06/2024 - São Paulo - SP - 15:00</h3>
+                <p>Teatro Praça das Artes Sessão Extra - Barueri</p>
+            </div>
+            <div class="show">
+                <h3>17/05/2024 - São Paulo - SP - 15:00</h3>
+                <p>Praça Pública - Água Branca</p>
+            </div>
+        </div>
+        <script>
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('nav ul');
+        
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+            });
+        </script>
+        <br>
+        <br>
+        <div class="copyright">
+            <p>© 2024 Creeg. Todos os direitos reservados.</p>
+        </div>
+</body>
+</html>

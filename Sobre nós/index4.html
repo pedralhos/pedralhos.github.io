@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="../Imagens/images.jpeg" alt="logo">
+            <h1>creeg</h1>
+        </div>
+        <nav>
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../Músicas/index2.html">Músicas</a></li>
+            <li><a href="../Shows/index3.html">Shows</a></li>
+            <li><a href="../Produtos/index5.html">Produtos</a></li>
+            <li><a id="sobre_nos" href="../Sobre nós/index4.html">Sobre nós</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        </nav>
+    </header>
+    <h1 class="titulo">SOBRE NÓS</h1>
+    <div class="logo1">
+        <img src="../Imagens/images.jpeg" alt="logo">
+        <p>A banda <strong>Creeg</strong> surgiu em 2022 em <strong>São Paulo - Brasil</strong> em meados da pandemia do Covid-19, é composta por 2 integrantes
+        tendo como principais instrumentos a guitarra elétrica e a voz humana. Seu gênero principal é
+        Black Metal e Trash Metal, a banda possui apenas 2 álbuns, sendo um deles nomeado de <a class="link2" href="https://open.spotify.com/intl-pt/album/3L0nQkM7QeFqCOYhmeJG0v?si=enqh5oQ4Se69CMpcS-gyMw"><strong>Dissymetry</strong></a>, um Single
+        e o outro mais recente, lançado em 2023 <a class="link1" href="https://open.spotify.com/intl-pt/album/0E0SuUctn8kDj5QTaNlzSn?si=C0BxCtklT7SpVJfFTIluaA"><strong>Meaningless</strong></a>, um "Extended Play (EP)" composto por 2
+        músicas. Atualmente a banda apenas faz algumas apresentações ao vivo, sem previsões para um novo lançamento.</p>
+        <div class="logo-container">
+            <a href="https://open.spotify.com/intl-pt/artist/0TfhuexAPAzmdyjDI2acJb?si=Gh4LWTLpRgq78N6ND7hF2g" target="_blank">
+                <img src="../Imagens/spotifylogo.png" alt="Logo Spotify" class="spotify">
+            </a>
+            <a href="https://www.instagram.com/creegwow?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <img src="../Imagens/instagramlogo.png" alt="Logo Instagram" class="instagram">
+            </a>
+            <a href="mailto:cr33gmusic@gmail.com" target="_blank">
+                <img src="../Imagens/emaillogo.png" alt="Logo_Email" class="email">
+            </a>
+        </div>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('nav ul');
+    
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    </script>
+    <div class="copyright">
+        <p>© 2024 Creeg. Todos os direitos reservados.</p>
+    </div>
+    </div>
+</body>
+</html>

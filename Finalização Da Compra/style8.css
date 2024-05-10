@@ -1,0 +1,116 @@
+/*Fontes usadas*/
+@font-face {
+    font-family: BebasNeue;
+    src: url(../Fontes/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: RobotoMono;
+    src: url(../Fontes/RobotoMono-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: RobotoMonoSemiBoldItalic;
+    src: url(../Fontes/RobotoMono-SemiBoldItalic.ttf);
+}
+
+
+/*Barra de navegação*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex; 
+    align-items: center; 
+    cursor:auto
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    margin-right: 10px; 
+}
+
+.logo h1 {
+    margin: 0; 
+    font-family: RobotoMono;
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a {
+    color: rgb(179, 176, 176);
+    text-decoration: none;
+    font-family: BebasNeue;
+    padding-right: 10px;
+    font-size: 35px;
+}
+
+li:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+nav ul li a:hover {
+    transition: all 0.3s ease;
+    color: rgb(0, 0, 0);
+}
+#produtos{
+    color: black;
+}
+
+
+/*Formulário*/
+body {
+    font-family: RobotoMono;
+    background-color: #ffffff;
+}
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    margin-top: 0;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"], input[type="number"], input[type="tel"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
