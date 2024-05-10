@@ -3,7 +3,14 @@
     font-family: BebasNeue;
     src: url(BebasNeue-Regular.ttf);
 }
-
+@font-face {
+    font-family: RobotoMono;
+    src: url(RobotoMono-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: RobotoMonoSemiBoldItalic;
+    src: url(RobotoMono-SemiBoldItalic.ttf);
+}
 
 @media(min-width: 481px) and (max-width:768px){
     header{
