@@ -1,15 +1,15 @@
 /*Fontes usadas*/
 @font-face {
     font-family: BebasNeue;
-    src: url(../pedralhos.github.io/BebasNeue-Regular.ttf) format('truetype');
+    src: url(BebasNeue-Regular.ttf) format('truetype');
 }
 @font-face {
     font-family: RobotoMono;
-    src: url(../pedralhos.github.io/RobotoMono-VariableFont_wght.ttf) format('truetype');
+    src: url(RobotoMono-VariableFont_wght.ttf) format('truetype');
 }
 @font-face {
     font-family: RobotoMonoSemiBoldItalic;
-    src: url(../pedralhos.github.io/RobotoMono-SemiBoldItalic.ttf) format('truetype');
+    src: url(RobotoMono-SemiBoldItalic.ttf) format('truetype');
 }
 
 @media(min-width: 481px) and (max-width:768px){
@@ -18,12 +18,6 @@
     }
 }
 
-
-.bebas-neue-regular {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 /*Fundo*/
 body {
