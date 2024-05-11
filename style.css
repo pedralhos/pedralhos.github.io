@@ -99,7 +99,6 @@ hr{
 
 
 /*Capas de álbum*/
-
 .albuns{
     display: flex;
     justify-content: space-around;
@@ -107,12 +106,13 @@ hr{
     margin-top: 3%;
 }
 
-.meaningless{
+.meaningless, .dissymetry {
     width: 30%;
     height: auto;
+    margin-bottom: 20px;
 }
 
-.meaningless img{
+.meaningless img, .dissymetry img{
     width: 100%;
     height: auto;
 }
@@ -123,29 +123,20 @@ hr{
     color: rgb(0, 0, 0);
 }
 
-.dissymetry{
-    width: 30%;
-    height: auto;
-}
-
-.dissymetry img{
-    width: 100%;
-    height: auto;
-}
-
 .dissymetry h1{
     text-align: center;
     font-family: RobotoMono;
     color: rgb(0, 0, 0);
 }
 
-
-@media (min-width: 480px) and (max-width: 768px){
-    .dissymetry h1{
-        font-size: 25px;
+@media(max-width:768px){
+    .albuns{
+        flex-direction: column;
+        align-items: center;
     }
-    .meaningless h1{
-        font-size: 25px;
+
+    .meaningless, .dissymetry {
+        width: 80%; 
     }
 }
 

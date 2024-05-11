@@ -90,21 +90,42 @@ nav ul li a:hover {
 
 
 /*Informações - Sobre nós*/
-.logo1{
-    padding-top: 20px;
-    padding-left: 36%;
-    padding-bottom: 20px;
-    width: 30%;
-    height: auto;
-}
-
-.logo1 img{
-    width: 100%;
-    height: auto;
-}
-
-.logo1 p{
+.logo1 {
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
     font-family: RobotoMono;
+}
+
+.logo1 img {
+    max-width: 400px;
+    height: auto;
+    display: inline-block;  
+}
+
+.logo1 p {
+    font-size: 16px;
+    margin: 0 auto; 
+    max-width: 600px; 
+}
+
+
+@media(min-width: 300px) and (max-width: 900px) {
+    .logo1 {
+        padding: 10px;
+    }
+    .logo1 img {
+        max-width: 100%;
+        height: auto;
+    }
+    .logo-container {
+        text-align: center;
+    }
+    .logo-container a {
+        display: inline-block;
+        margin: 5px;
+    }
 }
 
 .link1{
@@ -120,30 +141,22 @@ nav ul li a:hover {
 .logo-container {
     display: flex;
     justify-content: center;
-    align-items: center; 
-    gap: 10px;
-    margin-right: 5%;
+    align-items: center;
 }
 
-.logo-container img {
-    width: 50px; 
-    height: auto;
-    cursor: pointer; 
+.logo-container a {
+    margin: 0 20px;
 }
 
-.logo-container .email{
-    width: 38px;
-    height: auto;
+.logo-container img{
+    width: 30px;
+    height: 0 auto;
+    transition: all 0.3s ease;
 }
 
 .logo-container .email:hover{
     transition: all 0.3s ease;
     transform: scale(1.1);
-}
-
-.logo-container .instagram{
-    width: 73px;
-    height: auto;
 }
 
 .logo-container .instagram:hover{
