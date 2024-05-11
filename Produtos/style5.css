@@ -124,6 +124,7 @@ nav ul li a:hover {
 }
 
 .vinyl1 img, .vinyl2 img {
+    transition: all 0.3s ease;
     max-width: 85%; 
     height: auto; 
 }
