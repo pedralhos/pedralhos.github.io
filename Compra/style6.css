@@ -83,14 +83,15 @@ nav ul li a:hover {
 /*Produto*/
 .product-container {
     display: flex;
-    margin-top: 90px;
-    margin-left: 15%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
 }
-
 .zoom-container {
     overflow: hidden;
-    width: 600px; /* Ajuste o tamanho conforme necessário */
-    height: 390px; /* Ajuste o tamanho conforme necessário */
+    width: 600px; 
+    height: 390px;
 }
 
 .zoom-image {
@@ -105,9 +106,7 @@ nav ul li a:hover {
 
 .product-info {
     width: 20%;
-    margin-left: 12%;
-    margin-top: 80px;
-    text-align: start;
+    text-align: center;
     font-family: RobotoMono;
 }
 
@@ -115,23 +114,28 @@ input{
     width: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 768px) {
     .product-container {
-        flex-direction: column; /* Altera para empilhar os itens verticalmente */
-        align-items: center; /* Centraliza os itens na horizontal */
-        margin-right: 12%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .product-info {
         width: 50%;
-        margin-bottom: 12%;
-        margin-right: 12%;
-        text-align: start; /* Centraliza o texto */
+        text-align: center; 
+    }
+
+    .zoom-container {
+        overflow: hidden;
+        width: 300px; 
+        height: 200px;
     }
 }
 
 .buy-button {
-    margin-top: 10px; /* Espaço entre o campo de entrada e o botão */
+    margin-top: 10px;
     padding: 10px 20px;
     background-color: #696969;
     color: white;
@@ -145,6 +149,7 @@ input{
 .buy-button:hover {
     background-color: #000000;
 }
+
 
 
 /*COPYRIGHT*/
